@@ -1,0 +1,80 @@
+[
+  {
+    "recipe_id": "1",
+    "recipe_name": "Spicy Chicken Stir Fry",
+    "short_description": "A delicious and easy-to-make chicken stir fry with a kick of spice.",
+    "ingredients": [
+      "550g chicken breast",
+      "120ml soy sauce",
+      "200g basil leaves"
+    ],
+    "preparing_time": "30",
+    "calories": "320",
+    "recipe_image": "https://i.ibb.co/W0C0pg9/food-image-1.png"
+  },
+  {
+    "recipe_id": "2",
+    "recipe_name": "Vegetable Curry",
+    "short_description": "A hearty and flavorful vegetable curry perfect for a cozy night in.",
+    "ingredients": [
+      "2 cups cauliflower florets",
+      "1 cup diced carrots",
+      "1 cup green peas"
+    ],
+    "preparing_time": "45",
+    "calories": "250",
+    "recipe_image": "https://i.ibb.co/yYX7yvW/food-image-2.png"
+  },
+  {
+    "recipe_id": "3",
+    "recipe_name": "Classic Margherita Pizza",
+    "short_description": "Simple yet delicious Margherita pizza topped with fresh tomatoes, mozzarella, and basil.",
+    "ingredients": [
+      "1 pizza dough",
+      "200g fresh mozzarella cheese",
+      "2 tomatoes, sliced"
+    ],
+    "preparing_time": "25",
+    "calories": "300",
+    "recipe_image": "https://i.ibb.co/z2QrDwF/food-image-3.jpg"
+  },
+  {
+    "recipe_id": "4",
+    "recipe_name": "Banana Walnut Pancakes",
+    "short_description": "Fluffy pancakes made with ripe bananas and crunchy walnuts, perfect for a leisurely breakfast.",
+    "ingredients": [
+      "1 cup all-purpose flour",
+      "1 ripe banana, mashed",
+      "1/4 cup chopped walnuts"
+    ],
+    "preparing_time": "20",
+    "calories": "200",
+    "recipe_image": "https://i.ibb.co/1QqnwkY/food-image-4.jpg"
+  },
+  {
+    "recipe_id": "5",
+    "recipe_name": "Quinoa Salad with Avocado",
+    "short_description": "A refreshing salad packed with protein-rich quinoa, creamy avocado, and crunchy vegetables.",
+    "ingredients": [
+      "1 cup cooked quinoa",
+      "1 avocado, diced",
+      "1/2 cup cherry tomatoes, halved"
+    ],
+    "preparing_time": "15",
+    "calories": "180",
+    "recipe_image": "https://i.ibb.co/Y2B4V4r/food-image-5.jpg"
+  },
+  {
+    "recipe_id": "6",
+    "recipe_name": "Mango Coconut Smoothie",
+    "short_description": "A tropical smoothie bursting with the flavors of mango and coconut, perfect for a refreshing snack.",
+    "ingredients": [
+      "1 ripe mango, diced",
+      "1/2 cup coconut milk",
+      "1/2 cup plain yogurt"
+    ],
+    "preparing_time": "10",
+    "calories": "150",
+    "recipe_image": "https://i.ibb.co/L5Y1Y5T/food-image-6.jpg"
+  }
+]
