@@ -7,6 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
   const [carts, setCarts] = useState([]);
+  const [cooking, setCooking] = useState([]);
 
   useEffect(() => {
     fetch("recipe.json")
@@ -15,13 +16,24 @@ const Recipes = () => {
   }, []);
 
   const handleCart = (recipe) => {
-    const alreadyExists = carts.find((food) => food.id == recipes.id);
+    const isExist = carts.find((food) => food.recipe_id == recipe.recipe_id);
     const newCart = [...carts, recipe];
-    if (!alreadyExists) {
+    if (!isExist) {
       setCarts(newCart);
       toast.success("Food Added");
     } else {
-      toast.warn("Food Already Exists");
+      toast.warn("This Food Already Exists");
+    }
+  };
+
+  const handlePreparing = (id, cook) => {
+    const delCart = carts.filter((item) => item.recipe_id != id);
+    setCarts(delCart);
+    const isExist = cooking.find((cooks) => cooks.recipe_id == cook.recipe_id);
+    const newCook = [...cooking, cook];
+    if (!isExist) {
+      setCooking(newCook);
+      toast.success("Start Cooking");
     }
   };
 
@@ -37,7 +49,11 @@ const Recipes = () => {
         ))}
       </div>
       <div className="lg:w-2/5">
-        <Carts carts={carts}></Carts>
+        <Carts
+          carts={carts}
+          handlePreparing={handlePreparing}
+          cooking={cooking}
+        ></Carts>
       </div>
       <ToastContainer />
     </div>

@@ -18,7 +18,9 @@ const Recipe = ({ recipe, handleCart }) => {
         <p className="text-[#878787]">{short_description}</p>
       </div>
       <div className="space-y-4 pb-6 border-b-[1px]">
-        <h6 className="text-lg text-[#282828] font-medium">Ingredients: 6</h6>
+        <h6 className="text-lg text-[#282828] font-medium">
+          Ingredients: {ingredients.length}
+        </h6>
         <ul className="list-disc ml-4 *:text-lg *:text-[#878787]">
           {ingredients.map((ing) => (
             <li>{ing}</li>
